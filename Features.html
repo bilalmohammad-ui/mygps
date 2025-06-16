@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Features - MYGPS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: white;
+    }
+
+    .top-bar {
+      background: #1b4f91;
+      color: white;
+      padding: 5px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+    .top-bar .social-icons i { margin-right: 10px; cursor: pointer; }
+    .top-bar .right-buttons { display: flex; gap: 20px; }
+    .top-bar .right-buttons a { color: white; text-decoration: none; }
+
+    header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo { display: flex; align-items: center; }
+    .logo img { height: 40px; margin-right: 10px; }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+    }
+
+    .login {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #f2f2f2;
+      padding: 5px 10px;
+      border-radius: 20px;
+    }
+
+    .hero {
+      background-color: white;
+      text-align: center;
+      padding: 80px 250px 100px;
+      position: relative;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-content img {
+      max-width: 90%;
+      width: 700px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .feature-box {
+      background: #f8f8f8;
+      border-radius: 10px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .feature-box i {
+      font-size: 32px;
+      color: #1b4f91;
+      margin-bottom: 15px;
+    }
+
+    .feature-box h3 {
+      margin-bottom: 10px;
+    }
+
+    .feature-box p {
+      font-size: 15px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="social-icons">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fas fa-phone"></i>
+    <i class="fab fa-whatsapp"></i>
+    <i class="fas fa-envelope"></i>
+  </div>
+  <div class="right-buttons">
+    <span>Call Us: +91 7399991199</span>
+    <a href="#">Get Free Appointment →</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="logo">
+    <img src="converted_image.png" alt="Logo" />
+    <div>
+      <strong>MYGPS</strong><br/>
+      <small>Navigate like never before</small>
+    </div>
+  </div>
+  <nav>
+    <a href="home.html">HOME</a>
+    <a href="ABOUT US.HTML">ABOUT US</a>
+    <a href="Features.html">FEATURES</a>
+    <a href="service.html">SERVICES</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="login.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a>
+  
+  </nav>
+  <div class="">
+   
+    <span></span>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <img src="mygps 09.jpeg" alt="MyGPS Device">
+  </div>
+</section>
+
+<!-- Feature Boxes -->
+<section class="section">
+  <h2>Our Key Features</h2>
+  <div class="features-grid">
+    <div class="feature-box">
+      <i class="fas fa-map-marked-alt"></i>
+      <h3>Real-Time Tracking</h3>
+      <p>Real Time Tracking 24x7 GPS History Parking Alert Zone Alert Speed Alert Unplug Device Alert 1 Month Web History Unlimited Sharing.</p>
+    </div>
+    <div class="feature-box">
+      <i class="fas fa-bell"></i>
+      <h3>Instant Alerts</h3>
+      <p>Get notifications for speed, geo-fence breaches, ignition on/off, Zone ,Parkinge, and more.</p>
+    </div>
+    <div class="feature-box">
+      <i class="fas fa-route"></i>
+      <h3>History</h3>
+      <p>History shows all stored data which server has collected from connected devices for chosen period of time. Displayed on map, graphs, and XLS/HTML reports.</p>
+    </div>
+    <div class="feature-box">
+      <i class="fas fa-gas-pump"></i>
+      <h3>Fuel Monitoring</h3>
+      <p>Track fuel usage and reduce wastage through accurate analytics.</p>
+    </div>
+    <div class="feature-box">
+      <i class="fas fa-mobile-alt"></i>
+      <h3>Mobile App Access</h3>
+      <p>Track from your smartphone anywhere, anytime with our mobile-friendly design.</p>
+    </div>
+    <div class="feature-box">
+      <i class="fas fa-database"></i>
+      <h3>Data Reports</h3>
+      <p>Download and analyze detailed reports for driver performance and trip data.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

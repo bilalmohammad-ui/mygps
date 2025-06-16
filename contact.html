@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us - MYGPS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f8f8;
+    }
+
+    .top-bar {
+      background: #1b4f91;
+      color: white;
+      padding: 5px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .top-bar .social-icons i {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .top-bar .right-buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .top-bar .right-buttons a {
+      color: white;
+      text-decoration: none;
+    }
+
+    header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #1b4f91;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 50px 40px;
+      background: white;
+      max-width: 1200px;
+      margin: 40px auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      margin-right: 40px;
+    }
+
+    .contact-form h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #1b4f91;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 48%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .contact-form textarea {
+      width: 100%;
+      height: 150px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      background: #f1b600;
+      color: #000;
+      padding: 12px 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 250px;
+      color: #333;
+    }
+
+    .contact-info h4 {
+      margin-top: 0;
+      color: #1b4f91;
+      margin-bottom: 10px;
+    }
+
+    .contact-info p,
+    .contact-info a {
+      color: #333;
+      margin-bottom: 15px;
+      font-size: 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .contact-info i {
+      margin-right: 10px;
+      color: #f1b600;
+    }
+
+    footer {
+      background: #f1f1f1;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media(max-width: 768px) {
+      .contact-form input {
+        width: 100%;
+      }
+
+      .contact-container {
+        flex-direction: column;
+      }
+
+      .contact-form {
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="social-icons">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fas fa-phone"></i>
+    <i class="fab fa-whatsapp"></i>
+    <i class="fas fa-envelope"></i>
+  </div>
+  <div class="right-buttons">
+    <span>Call Us: +91 7399991199</span>
+    <a href="#">Get Free Appointment →</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="logo">
+    <img src="converted_image.png" alt="Logo">
+    <div>
+      <strong>MYGPS</strong><br />
+      <small>Navigate like never before</small>
+    </div>
+  </div>
+  <nav>
+    <a href="home.html">HOME</a>
+    <a href="ABOUT US.html">ABOUT US</a>
+    <a href="Features.html">FEATURES</a>
+    <a href="service.html">SERVICES</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="login.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a>
+  </nav>
+</header>
+
+<!-- Contact Form Section -->
+<section class="contact-container">
+  <div class="contact-form">
+    <h2>Enquiry Details</h2>
+    <form>
+      <input type="text" placeholder="First name" required>
+      <input type="email" placeholder="Email address" required>
+      <input type="text" placeholder="Phone" required>
+      <input type="text" placeholder="Your website">
+      <textarea placeholder="Write message" required></textarea>
+      <button type="submit"><i class="fas fa-paper-plane"></i> SEND MESSAGE</button>
+    </form>
+  </div>
+
+  <div class="contact-info">
+    <h4>PHONE</h4>
+    <p><i class="fas fa-phone"></i> +91-8055273730</p>
+
+    <h4>EMAIL</h4>
+    <p><i class="fas fa-envelope"></i>
+      <a href="mailto:info@mygpslive.com">info@mygpslive.com</a>
+    </p>
+
+    <h4>ADDRESS</h4>
+    <p><i class="fas fa-map-marker-alt"></i> Roshan Gate, Aurangabad 431001</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 MYGPS | All rights reserved.
+</footer>
+
+</body>
+</html>
